@@ -4,8 +4,8 @@ import (
 	"github.com/mxmCherry/openrtb"
 	"github.com/pborman/uuid"
 
-	"github.com/satoshi03/go-dsp-api/common/consts"
-	"github.com/satoshi03/go-dsp-api/data"
+	"github.com/basantashah/go-dsp-api/common/consts"
+	"github.com/basantashah/go-dsp-api/data"
 )
 
 func makeBidResponse(br *openrtb.BidRequest, ads []*data.Ad) *openrtb.BidResponse {

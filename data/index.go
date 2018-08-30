@@ -1,13 +1,14 @@
 package data
 
 import (
-	"github.com/mxmCherry/openrtb"
-	"golang.org/x/net/context"
-	"gopkg.in/vmihailenco/msgpack.v2"
+	"context"
 
-	"github.com/satoshi03/go-dsp-api/common/consts"
-	"github.com/satoshi03/go-dsp-api/common/errors"
-	"github.com/satoshi03/go-dsp-api/redis"
+	"github.com/basantashah/go-dsp-api/redis"
+	"github.com/mxmCherry/openrtb"
+	msgpack "gopkg.in/vmihailenco/msgpack.v2"
+
+	"github.com/basantashah/go-dsp-api/common/consts"
+	"github.com/basantashah/go-dsp-api/common/errors"
 )
 
 type Index []Ad
@@ -39,8 +40,8 @@ func getBannerDetailView(w, h uint64) (string, error) {
 
 func getView(imp *openrtb.Imp) (string, error) {
 	switch {
-	case imp.Banner != nil:
-		return getBannerDetailView(imp.Banner.W, imp.Banner.H)
+	// case imp.Banner != nil:
+	// 	return getBannerDetailView(imp.Banner.W, imp.Banner.H)
 	case imp.Video != nil:
 		return "", errors.NoSupportError{"video"}
 	case imp.Native != nil:

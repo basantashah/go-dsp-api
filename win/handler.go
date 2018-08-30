@@ -7,8 +7,8 @@ import (
 	"github.com/guregu/kami"
 	"golang.org/x/net/context"
 
-	"github.com/satoshi03/go-dsp-api/common/utils"
-	"github.com/satoshi03/go-dsp-api/fluent"
+	"github.com/basantashah/go-dsp-api/common/utils"
+	"github.com/basantashah/go-dsp-api/fluent"
 )
 
 func winHandler(ctx context.Context, w http.ResponseWriter, r *http.Request) {

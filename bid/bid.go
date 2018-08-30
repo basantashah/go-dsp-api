@@ -6,9 +6,9 @@ import (
 	"github.com/mxmCherry/openrtb"
 	"golang.org/x/net/context"
 
-	"github.com/satoshi03/go-dsp-api/common/consts"
-	"github.com/satoshi03/go-dsp-api/common/errors"
-	"github.com/satoshi03/go-dsp-api/data"
+	"github.com/basantashah/go-dsp-api/common/consts"
+	"github.com/basantashah/go-dsp-api/common/errors"
+	"github.com/basantashah/go-dsp-api/data"
 )
 
 func bid(ctx context.Context, br *openrtb.BidRequest) []*data.Ad {

@@ -7,8 +7,8 @@ import (
 
 	"github.com/mxmCherry/openrtb"
 
-	"github.com/satoshi03/go-dsp-api/common/consts"
-	"github.com/satoshi03/go-dsp-api/common/errors"
+	"github.com/basantashah/go-dsp-api/common/consts"
+	"github.com/basantashah/go-dsp-api/common/errors"
 )
 
 type Request struct {

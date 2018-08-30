@@ -1,7 +1,3 @@
-redis:
+psql:
   host: "127.0.0.1"
-  port: 6379
-
-fluent:
-  host: "127.0.0.1"
-  port: 24224
+  port: 5432
